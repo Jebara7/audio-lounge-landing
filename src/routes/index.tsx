@@ -1,26 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { HeroSection } from "@/components/HeroSection";
+import { ValueSection } from "@/components/ValueSection";
+import { AboutSection } from "@/components/AboutSection";
+import { FeaturesSection } from "@/components/FeaturesSection";
+import { GallerySection } from "@/components/GallerySection";
+import { PricingSection } from "@/components/PricingSection";
+import { ReviewsSection } from "@/components/ReviewsSection";
+import { FAQSection } from "@/components/FAQSection";
+import { CTASection } from "@/components/CTASection";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "The Audio Lounge — Professionele Podcast Studio" },
+      { name: "description", content: "High-end podcast studio met professionele audio, video en volledige begeleiding. Boek vandaag nog jouw sessie." },
+      { property: "og:title", content: "The Audio Lounge — Professionele Podcast Studio" },
+      { property: "og:description", content: "Neem je podcast op als een professional in onze high-end studio." },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      <Navbar />
+      <HeroSection />
+      <ValueSection />
+      <AboutSection />
+      <FeaturesSection />
+      <GallerySection />
+      <PricingSection />
+      <ReviewsSection />
+      <FAQSection />
+      <CTASection />
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
