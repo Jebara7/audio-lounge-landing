@@ -16,7 +16,7 @@ export function HeroSection() {
         <source src="https://www.podcastdock.nl/wp-content/uploads/2025/10/podcast-header.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/90 via-[#0A0A0A]/70 to-[#0A0A0A]/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#111111]/90 via-[#111111]/70 to-[#111111]/40" />
 
       <div className="container-wide relative z-10 py-32">
         <div className="max-w-3xl">
@@ -34,7 +34,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.25, ease: "easeOut" }}
-            className="mt-8 max-w-xl text-lg leading-relaxed text-[#B3B3B3] lg:text-xl"
+            className="mt-8 max-w-xl text-lg leading-relaxed text-[#C2C2C2] lg:text-xl"
           >
             High-end podcast studio met professionele audio, video en volledige begeleiding.
           </motion.p>

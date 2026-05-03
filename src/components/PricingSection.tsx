@@ -45,8 +45,8 @@ export function PricingSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.12 }}
-              className={`glass-card relative flex flex-col transition-all duration-400 hover:-translate-y-2 ${
-                plan.popular ? "ring-1 ring-primary/30 shadow-[0_0_40px_rgba(255,138,61,0.1)]" : ""
+              className={`glass-card relative flex flex-col transition-all duration-400 hover:-translate-y-1 ${
+                plan.popular ? "ring-1 ring-primary/20" : ""
               }`}
             >
               {plan.popular && (
@@ -58,7 +58,7 @@ export function PricingSection() {
               <p className="mt-5 text-5xl font-bold text-foreground">{plan.price}</p>
               <ul className="mt-8 flex-1 space-y-4">
                 {plan.features.map((f) => (
-                  <li key={f} className="flex items-center gap-3 text-[#B3B3B3]">
+                  <li key={f} className="flex items-center gap-3 text-[#C2C2C2]">
                     <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
