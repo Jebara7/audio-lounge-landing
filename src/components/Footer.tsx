@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="border-t border-[rgba(255,255,255,0.06)] bg-secondary px-6 py-16">
+    <footer className="border-t border-[rgba(0,0,0,0.06)] bg-secondary px-6 py-16">
       <div className="container-wide flex flex-col items-center justify-between gap-8 md:flex-row">
         <span className="text-xl font-bold tracking-tight text-foreground">The Audio Lounge</span>
         <nav className="flex gap-8 text-sm text-muted-foreground">

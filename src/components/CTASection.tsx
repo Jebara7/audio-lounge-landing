@@ -4,8 +4,7 @@ const BOOKING_URL = "https://cal.com/your-link";
 
 export function CTASection() {
   return (
-    <section id="contact" className="section-padding relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-background to-background" />
+    <section id="contact" className="section-padding relative overflow-hidden bg-muted">
       <div className="container-wide relative">
         <div className="mx-auto max-w-3xl text-center">
           <motion.h2

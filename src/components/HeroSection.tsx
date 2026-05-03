@@ -16,7 +16,7 @@ export function HeroSection() {
         <source src="https://www.podcastdock.nl/wp-content/uploads/2025/10/podcast-header.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#111111]/90 via-[#111111]/70 to-[#111111]/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1A1A1A]/80 via-[#1A1A1A]/55 to-[#1A1A1A]/25" />
 
       <div className="container-wide relative z-10 py-32">
         <div className="max-w-3xl">
@@ -24,7 +24,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-6xl lg:text-7xl xl:text-8xl"
+            className="text-5xl font-bold leading-[1.1] tracking-tight text-white md:text-6xl lg:text-7xl xl:text-8xl"
           >
             Neem je podcast op als een{" "}
             <span className="text-gradient">professional</span>
@@ -34,7 +34,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.25, ease: "easeOut" }}
-            className="mt-8 max-w-xl text-lg leading-relaxed text-secondary-foreground lg:text-xl"
+            className="mt-8 max-w-xl text-lg leading-relaxed text-white/80 lg:text-xl"
           >
             High-end podcast studio met professionele audio, video en volledige begeleiding.
           </motion.p>
@@ -48,7 +48,7 @@ export function HeroSection() {
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-primary text-base">
               Boek een studio
             </a>
-            <a href="#studio" className="btn-secondary text-base">
+            <a href="#studio" className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold text-white tracking-wide uppercase transition-all duration-300 hover:bg-white/20">
               Bekijk de studio
             </a>
           </motion.div>
