@@ -34,7 +34,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.25, ease: "easeOut" }}
-            className="mt-8 max-w-xl text-lg leading-relaxed text-[#C2C2C2] lg:text-xl"
+            className="mt-8 max-w-xl text-lg leading-relaxed text-secondary-foreground lg:text-xl"
           >
             High-end podcast studio met professionele audio, video en volledige begeleiding.
           </motion.p>

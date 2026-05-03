@@ -38,7 +38,7 @@ export function ReviewsSection() {
                 ))}
               </div>
               <p className="text-lg text-foreground italic leading-relaxed">&ldquo;{r.text}&rdquo;</p>
-              <p className="mt-5 text-sm font-medium text-[#8A8A8A]">— {r.author}</p>
+              <p className="mt-5 text-sm font-medium text-muted-foreground">— {r.author}</p>
             </motion.div>
           ))}
         </div>

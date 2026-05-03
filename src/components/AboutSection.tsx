@@ -40,7 +40,7 @@ export function AboutSection() {
             <p className="mt-3 text-xl text-gradient font-medium">
               Waar sterke gesprekken professionele content worden.
             </p>
-            <p className="mt-8 text-lg text-[#C2C2C2] leading-relaxed">
+            <p className="mt-8 text-lg text-secondary-foreground leading-relaxed">
               The Audio Lounge is gebouwd voor creators, ondernemers en merken die professionele podcast content willen maken zonder technische zorgen. Wij combineren high-end apparatuur met een ontspannen en begeleide ervaring.
             </p>
 
@@ -52,7 +52,7 @@ export function AboutSection() {
                   </span>
                   <div>
                     <h3 className="text-lg font-semibold text-foreground">{v.title}</h3>
-                    <p className="mt-1 text-[#C2C2C2]">{v.desc}</p>
+                    <p className="mt-1 text-secondary-foreground">{v.desc}</p>
                   </div>
                 </div>
               ))}
