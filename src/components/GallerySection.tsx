@@ -13,7 +13,7 @@ const images = [
 
 export function GallerySection() {
   return (
-    <section id="studio" className="section-padding bg-secondary">
+    <section id="studio" className="section-padding bg-muted">
       <div className="container-wide">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export function GallerySection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className={`overflow-hidden rounded-2xl shadow-md ${img.span}`}
+              className={`overflow-hidden rounded-2xl border border-[rgba(0,0,0,0.06)] ${img.span}`}
             >
               <img
                 src={img.src}
