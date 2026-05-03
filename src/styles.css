@@ -54,41 +54,41 @@
 
 :root {
   --radius: 1rem;
-  --background: #0A0A0A;
+  --background: #111111;
   --foreground: #FFFFFF;
-  --card: #1A1A1A;
+  --card: #1F1F1F;
   --card-foreground: #FFFFFF;
-  --popover: #1A1A1A;
+  --popover: #1F1F1F;
   --popover-foreground: #FFFFFF;
   --primary: #FF8A3D;
   --primary-foreground: #FFFFFF;
-  --secondary: #121212;
-  --secondary-foreground: #B3B3B3;
-  --muted: #1A1A1A;
-  --muted-foreground: #7A7A7A;
+  --secondary: #181818;
+  --secondary-foreground: #C2C2C2;
+  --muted: #202020;
+  --muted-foreground: #8A8A8A;
   --accent: #FF8A3D;
   --accent-foreground: #FFFFFF;
   --destructive: #ef4444;
   --destructive-foreground: #FFFFFF;
-  --border: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.06);
   --input: rgba(255, 255, 255, 0.08);
   --ring: #FF8A3D;
   --chart-1: #FF8A3D;
   --chart-2: #FFB067;
-  --chart-3: #7A7A7A;
-  --chart-4: #B3B3B3;
+  --chart-3: #8A8A8A;
+  --chart-4: #C2C2C2;
   --chart-5: #FFFFFF;
-  --sidebar: #0A0A0A;
+  --sidebar: #111111;
   --sidebar-foreground: #FFFFFF;
   --sidebar-primary: #FF8A3D;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #1A1A1A;
+  --sidebar-accent: #1F1F1F;
   --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-border: rgba(255, 255, 255, 0.06);
   --sidebar-ring: #FF8A3D;
-  --glow: rgba(255, 138, 61, 0.4);
-  --surface: #121212;
-  --surface-foreground: #B3B3B3;
+  --glow: rgba(255, 138, 61, 0.25);
+  --surface: #181818;
+  --surface-foreground: #C2C2C2;
 }
 
 @layer base {
@@ -109,25 +109,27 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-2xl bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground tracking-wide uppercase transition-all duration-300;
-    box-shadow: 0 0 24px rgba(255, 138, 61, 0.3);
+    @apply inline-flex items-center justify-center bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground tracking-wide uppercase transition-all duration-300;
+    border-radius: 14px;
+    box-shadow: 0 0 16px rgba(255, 138, 61, 0.15);
   }
   .btn-primary:hover {
-    background-color: #FFB067;
-    box-shadow: 0 0 40px rgba(255, 138, 61, 0.5);
-    transform: translateY(-2px);
+    background-color: #FFA866;
+    box-shadow: 0 0 24px rgba(255, 138, 61, 0.25);
+    transform: translateY(-1px);
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-2xl border border-[rgba(255,255,255,0.15)] bg-transparent px-8 py-4 text-sm font-semibold text-foreground tracking-wide uppercase transition-all duration-300;
+    @apply inline-flex items-center justify-center border border-[rgba(255,255,255,0.12)] bg-transparent px-8 py-4 text-sm font-semibold text-foreground tracking-wide uppercase transition-all duration-300;
+    border-radius: 14px;
   }
   .btn-secondary:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.04);
   }
 
   .section-padding {
-    @apply px-6 py-28 md:px-12 lg:px-20 lg:py-36 xl:py-40;
+    @apply px-6 py-32 md:px-12 lg:px-20 lg:py-40 xl:py-48;
   }
 
   .glass-card {
@@ -140,12 +142,12 @@
   }
 
   .glow-border:hover {
-    border-color: rgba(255, 138, 61, 0.25);
-    box-shadow: 0 0 30px rgba(255, 138, 61, 0.08);
+    border-color: rgba(255, 138, 61, 0.2);
+    box-shadow: 0 0 20px rgba(255, 138, 61, 0.06);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #FF8A3D, #FFB067);
+    background: linear-gradient(135deg, #FF8A3D, #FFA866);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
