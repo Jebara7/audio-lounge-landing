@@ -22,7 +22,7 @@ export function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="mx-auto mt-8 max-w-xl text-lg text-[#B3B3B3] leading-relaxed"
+            className="mx-auto mt-8 max-w-xl text-lg text-[#C2C2C2] leading-relaxed"
           >
             Boek vandaag nog jouw sessie en start met professionele content.
           </motion.p>

@@ -21,7 +21,7 @@ export function ValueSection() {
             <h2 className="text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-5xl">
               Alles wat je nodig hebt voor een professionele podcast
             </h2>
-            <p className="mt-8 text-lg leading-relaxed text-[#B3B3B3]">
+            <p className="mt-8 text-lg leading-relaxed text-[#C2C2C2]">
               Bij The Audio Lounge bieden we een complete podcast ervaring. Van hoogwaardige audio en multi-camera video tot begeleiding en snelle oplevering — wij regelen alles.
             </p>
             <ul className="mt-10 space-y-5">
