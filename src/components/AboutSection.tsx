@@ -24,7 +24,7 @@ export function AboutSection() {
               loading="lazy"
               width={1280}
               height={864}
-              className="rounded-2xl glow-border w-full"
+              className="rounded-2xl border border-[rgba(0,0,0,0.06)] w-full"
             />
           </motion.div>
 
@@ -37,7 +37,7 @@ export function AboutSection() {
             <h2 className="text-3xl font-bold tracking-tight text-foreground lg:text-5xl">
               Over The Audio Lounge
             </h2>
-            <p className="mt-3 text-xl text-gradient font-medium">
+            <p className="mt-3 text-xl text-primary font-medium">
               Waar sterke gesprekken professionele content worden.
             </p>
             <p className="mt-8 text-lg text-secondary-foreground leading-relaxed">
@@ -47,7 +47,7 @@ export function AboutSection() {
             <div className="mt-12 space-y-7">
               {values.map((v, i) => (
                 <div key={i} className="flex gap-5">
-                  <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-base font-bold text-primary">
+                  <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[rgba(198,169,110,0.1)] text-base font-bold text-primary">
                     {i + 1}
                   </span>
                   <div>

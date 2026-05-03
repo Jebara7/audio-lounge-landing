@@ -9,7 +9,7 @@ const bullets = [
 
 export function ValueSection() {
   return (
-    <section className="section-padding">
+    <section className="section-padding bg-muted">
       <div className="container-wide">
         <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
           <motion.div
@@ -27,7 +27,7 @@ export function ValueSection() {
             <ul className="mt-10 space-y-5">
               {bullets.map((b) => (
                 <li key={b} className="flex items-center gap-4 text-foreground text-lg">
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[rgba(198,169,110,0.1)] text-primary">
                     <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
@@ -50,7 +50,7 @@ export function ValueSection() {
               loading="lazy"
               width={1280}
               height={864}
-              className="rounded-2xl glow-border w-full"
+              className="rounded-2xl border border-[rgba(0,0,0,0.06)] w-full"
             />
           </motion.div>
         </div>

@@ -62,9 +62,9 @@ export function FeaturesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="glass-card glow-border transition-all duration-400 hover:-translate-y-2"
+              className="glass-card transition-all duration-400 hover:-translate-y-1"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[rgba(198,169,110,0.1)] text-primary">
                 {f.icon}
               </div>
               <h3 className="mt-6 text-xl font-semibold text-foreground">{f.title}</h3>

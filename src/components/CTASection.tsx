@@ -4,7 +4,7 @@ const BOOKING_URL = "https://cal.com/your-link";
 
 export function CTASection() {
   return (
-    <section id="contact" className="section-padding relative overflow-hidden bg-muted">
+    <section id="contact" className="section-padding relative overflow-hidden bg-navy">
       <div className="container-wide relative">
         <div className="mx-auto max-w-3xl text-center">
           <motion.h2
@@ -12,7 +12,7 @@ export function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-3xl font-bold tracking-tight text-foreground lg:text-5xl"
+            className="text-3xl font-bold tracking-tight text-white lg:text-5xl"
           >
             Klaar om jouw podcast op te nemen?
           </motion.h2>
@@ -21,7 +21,7 @@ export function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="mx-auto mt-8 max-w-xl text-lg text-secondary-foreground leading-relaxed"
+            className="mx-auto mt-8 max-w-xl text-lg text-white/60 leading-relaxed"
           >
             Boek vandaag nog jouw sessie en start met professionele content.
           </motion.p>

@@ -46,7 +46,7 @@ export function PricingSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.12 }}
               className={`glass-card relative flex flex-col transition-all duration-400 hover:-translate-y-1 ${
-                plan.popular ? "ring-1 ring-primary/20" : ""
+                plan.popular ? "ring-1 ring-primary/30" : ""
               }`}
             >
               {plan.popular && (
