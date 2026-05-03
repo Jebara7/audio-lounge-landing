@@ -28,7 +28,7 @@ export function ReviewsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.12 }}
-              className="glass-card glow-border"
+              className="glass-card"
             >
               <div className="mb-5 flex gap-1 text-primary">
                 {[...Array(5)].map((_, s) => (
@@ -38,7 +38,7 @@ export function ReviewsSection() {
                 ))}
               </div>
               <p className="text-lg text-foreground italic leading-relaxed">&ldquo;{r.text}&rdquo;</p>
-              <p className="mt-5 text-sm font-medium text-[#8A8A8A]">— {r.author}</p>
+              <p className="mt-5 text-sm font-medium text-muted-foreground">— {r.author}</p>
             </motion.div>
           ))}
         </div>

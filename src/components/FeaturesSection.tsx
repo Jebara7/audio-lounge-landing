@@ -68,7 +68,7 @@ export function FeaturesSection() {
                 {f.icon}
               </div>
               <h3 className="mt-6 text-xl font-semibold text-foreground">{f.title}</h3>
-              <p className="mt-3 text-[#C2C2C2] leading-relaxed">{f.desc}</p>
+              <p className="mt-3 text-secondary-foreground leading-relaxed">{f.desc}</p>
             </motion.div>
           ))}
         </div>

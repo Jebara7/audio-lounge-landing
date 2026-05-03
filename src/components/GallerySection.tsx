@@ -33,7 +33,7 @@ export function GallerySection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className={`overflow-hidden rounded-2xl ${img.span}`}
+              className={`overflow-hidden rounded-2xl shadow-md ${img.span}`}
             >
               <img
                 src={img.src}

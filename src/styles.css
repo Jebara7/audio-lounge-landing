@@ -54,41 +54,41 @@
 
 :root {
   --radius: 1rem;
-  --background: #111111;
-  --foreground: #FFFFFF;
-  --card: #1F1F1F;
-  --card-foreground: #FFFFFF;
-  --popover: #1F1F1F;
-  --popover-foreground: #FFFFFF;
-  --primary: #FF8A3D;
+  --background: #F7F5F2;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A1A;
+  --primary: #C96A2B;
   --primary-foreground: #FFFFFF;
-  --secondary: #181818;
-  --secondary-foreground: #C2C2C2;
-  --muted: #202020;
+  --secondary: #EFECE6;
+  --secondary-foreground: #555555;
+  --muted: #E8E4DD;
   --muted-foreground: #8A8A8A;
-  --accent: #FF8A3D;
+  --accent: #C96A2B;
   --accent-foreground: #FFFFFF;
   --destructive: #ef4444;
   --destructive-foreground: #FFFFFF;
-  --border: rgba(255, 255, 255, 0.06);
-  --input: rgba(255, 255, 255, 0.08);
-  --ring: #FF8A3D;
-  --chart-1: #FF8A3D;
-  --chart-2: #FFB067;
+  --border: rgba(0, 0, 0, 0.06);
+  --input: rgba(0, 0, 0, 0.06);
+  --ring: #C96A2B;
+  --chart-1: #C96A2B;
+  --chart-2: #E07B39;
   --chart-3: #8A8A8A;
-  --chart-4: #C2C2C2;
-  --chart-5: #FFFFFF;
-  --sidebar: #111111;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #FF8A3D;
+  --chart-4: #555555;
+  --chart-5: #1A1A1A;
+  --sidebar: #F7F5F2;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-primary: #C96A2B;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #1F1F1F;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: rgba(255, 255, 255, 0.06);
-  --sidebar-ring: #FF8A3D;
-  --glow: rgba(255, 138, 61, 0.25);
-  --surface: #181818;
-  --surface-foreground: #C2C2C2;
+  --sidebar-accent: #EFECE6;
+  --sidebar-accent-foreground: #1A1A1A;
+  --sidebar-border: rgba(0, 0, 0, 0.06);
+  --sidebar-ring: #C96A2B;
+  --glow: rgba(201, 106, 43, 0.15);
+  --surface: #EFECE6;
+  --surface-foreground: #555555;
 }
 
 @layer base {
@@ -110,22 +110,22 @@
 @layer components {
   .btn-primary {
     @apply inline-flex items-center justify-center bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground tracking-wide uppercase transition-all duration-300;
-    border-radius: 14px;
-    box-shadow: 0 0 16px rgba(255, 138, 61, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(201, 106, 43, 0.2);
   }
   .btn-primary:hover {
-    background-color: #FFA866;
-    box-shadow: 0 0 24px rgba(255, 138, 61, 0.25);
+    background-color: #E07B39;
+    box-shadow: 0 4px 20px rgba(201, 106, 43, 0.25);
     transform: translateY(-1px);
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center border border-[rgba(255,255,255,0.12)] bg-transparent px-8 py-4 text-sm font-semibold text-foreground tracking-wide uppercase transition-all duration-300;
-    border-radius: 14px;
+    @apply inline-flex items-center justify-center border border-[rgba(0,0,0,0.1)] bg-white/60 px-8 py-4 text-sm font-semibold text-foreground tracking-wide uppercase transition-all duration-300;
+    border-radius: 12px;
   }
   .btn-secondary:hover {
-    border-color: rgba(255, 255, 255, 0.25);
-    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(0, 0, 0, 0.18);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .section-padding {
@@ -133,21 +133,23 @@
   }
 
   .glass-card {
-    @apply rounded-2xl border border-[rgba(255,255,255,0.06)] bg-card p-8 lg:p-10;
+    @apply rounded-2xl border border-[rgba(0,0,0,0.06)] bg-card p-8 lg:p-10;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.03);
   }
 
   .glow-border {
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 1rem;
     transition: all 0.4s ease;
   }
 
   .glow-border:hover {
-    border-color: rgba(255, 138, 61, 0.2);
-    box-shadow: 0 0 20px rgba(255, 138, 61, 0.06);
+    border-color: rgba(201, 106, 43, 0.2);
+    box-shadow: 0 4px 24px rgba(201, 106, 43, 0.08);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #FF8A3D, #FFA866);
+    background: linear-gradient(135deg, #C96A2B, #E07B39);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
